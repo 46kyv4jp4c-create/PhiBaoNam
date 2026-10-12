@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phi Bao Nam Shop</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b14;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 15px;
+      background: linear-gradient(135deg, #141c38, #51106c, #111827);
+      border-bottom: 2px solid #a855f7;
+    }
+
+    header h1 {
+      color: #d8b4fe;
+      font-size: 30px;
+      text-shadow: 0 0 15px #a855f7;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #d1d5db;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1000px;
+      margin: 25px auto;
+    }
+
+    h2 {
+      color: #c084fc;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: #131827;
+      border: 1px solid #30394f;
+      padding: 18px;
+      border-radius: 12px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      border-color: #c084fc;
+      transform: translateY(-3px);
+    }
+
+    .category {
+      text-align: center;
+      font-weight: bold;
+      color: #e9d5ff;
+    }
+
+    .service-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #4ade80;
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    .description {
+      color: #aab3c5;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .payment {
+      background: #131827;
+      border: 1px solid #7c3aed;
+      padding: 20px;
+      border-radius: 14px;
+    }
+
+    .payment p {
+      margin: 9px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .highlight {
+      color: #4ade80;
+      font-weight: bold;
+    }
+
+    .notice {
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #33250d;
+      border: 1px solid #eab308;
+      color: #fde68a;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background: #131827;
+      border: 1px solid #30394f;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .contact:hover {
+      border-color: #a855f7;
+    }
+
+    .contact strong {
+      color: #c084fc;
+    }
+
+    .copy-btn {
+      border: none;
+      background: #7c3aed;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px 0;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background: #9333ea;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px 12px;
+      color: #9ca3af;
+      background: #0d1120;
+      border-top: 1px solid #30394f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>✦ PHI BAO NAM SHOP ✦</h1>
+    <p>Uy tín - Nhanh chóng - Hỗ trợ tận tình</p>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <h2>📂 Danh mục dịch vụ</h2>
+      <div class="grid">
+        <div class="card category">📘 Facebook</div>
+        <div class="card category">🎵 TikTok</div>
+        <div class="card category">▶️ YouTube</div>
+        <div class="card category">📸 Instagram</div>
+        <div class="card category">🎮 Mua acc game FF</div>
+        <div class="card category">🛡️ Bảo mật tài khoản</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔥 Dịch vụ nổi bật</h2>
+      <div class="grid">
+
+        <div class="card">
+          <div class="service-name">Facebook</div>
+          <div class="price">10k</div>
+          <div class="description">Giá dịch vụ cơ bản</div>
+        </div>
+
+        <div class="card">
+          <div class="service-name">TikTok</div>
+          <div class="price">10k</div>
+          <div class="description">Giá dịch vụ cơ bản</div>
+        </div>
+
+        <div class="card">
+          <div class="service-name">YouTube</div>
+          <div class="price">30k</div>
+          <div class="description">Giá dịch vụ cơ bản</div>
+        </div>
+
+        <div class="card">
+          <div class="service-name">Instagram</div>
+          <div class="price">10k</div>
+          <div class="description">Giá dịch vụ cơ bản</div>
+        </div>
+
+        <div class="card">
+          <div class="service-name">Tut dame TikTok</div>
+          <div class="price">10k</div>
+          <div class="description">Chỉ hỗ trợ mục đích hợp pháp</div>
+        </div>
+
+        <div class="card">
+          <div class="service-name">Tut dame Facebook</div>
+          <div class="price">10k</div>
+          <div class="description">Chỉ hỗ trợ mục đích hợp pháp</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>💳 Thông tin thanh toán</h2>
+      <div class="payment">
+        <p>🏦 Ngân hàng: <strong>BIDV</strong></p>
+        <p>
+          🔢 Số tài khoản:
+          <strong class="highlight" id="account">8806808216</strong>
+        </p>
+        <button class="copy-btn"
+          onclick="copyText('account')">
+          Sao chép số tài khoản
+        </button>
+
+        <p>👤 Chủ tài khoản: <strong>Trinh Bao Nam</strong></p>
+        <p>
+          📝 Nội dung chuyển khoản:
+          <strong class="highlight" id="transfer">abcd</strong>
+        </p>
+        <button class="copy-btn"
+          onclick="copyText('transfer')">
+          Sao chép nội dung
+        </button>
+
+        <div class="notice">
+          ⚠️ <strong>Lưu ý:</strong> Chuyển khoản xong, vui lòng
+          chụp bill giao dịch và gửi cho chủ shop để xác nhận thanh toán.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📞 Liên hệ với shop</h2>
+      <div class="contact-list">
+
+        <a class="contact"
+          href="https://zalo.me/0867603718"
+          target="_blank" rel="noopener noreferrer">
+          <strong>💬 Zalo:</strong> 0867603718
+        </a>
+
+        <a class="contact"
+          href="https://t.me/phibaonam"
+          target="_blank" rel="noopener noreferrer">
+          <strong>✈️ Telegram:</strong> @phibaonam
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Phi Bao Nam Shop</p>
+    <p>Cảm ơn bạn đã tin tưởng và ủng hộ shop!</p>
+  </footer>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).textContent.trim();
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text)
+          .then(() => alert("Đã sao chép: " + text))
+          .catch(() => fallbackCopy(text));
+      } else {
+        fallbackCopy(text);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const input = document.createElement("textarea");
+      input.value = text;
+      input.style.position = "fixed";
+      input.style.opacity = "0";
+      document.body.appendChild(input);
+      input.select();
+
+      try {
+        document.execCommand("copy");
+        alert("Đã sao chép: " + text);
+      } catch (error) {
+        alert("Không sao chép được. Nội dung: " + text);
+      }
+
+      input.remove();
+    }
+  </script>
+
+</body>
+</html>
